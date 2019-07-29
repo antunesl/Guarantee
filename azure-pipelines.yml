@@ -71,3 +71,10 @@ steps:
     command: 'pack'
     projects: 'src/Guaranteed/*.csproj'
     includesymbols: true
+
+- task: DotNetCoreCLI@2
+  displayName: Push to Nuget.org
+  inputs:
+    command: 'push'
+    nugetFeedType: 'external'
+    externalEndPoint: 'Nuget.org'

@@ -63,6 +63,8 @@ steps:
     command: 'pack'
     projects: 'src/Guaranteed/Guaranteed.csproj'
     outputDir: '$(Build.ArtifactStagingDirectory)/Nuget'
+    versioningScheme: 'byEnvVar'
+    versionEnvVar: 'nupkgVersion'
 
 # Pack a symbol package along with NuGet package
 - task: DotNetCoreCLI@2
@@ -80,5 +82,3 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;'
     nuGetFeedType: 'external'
     publishFeedCredentials: 'Nuget.org'
-    versioningScheme: 'byEnvVar'
-    versionEnvVar: 'nupkgVersion'

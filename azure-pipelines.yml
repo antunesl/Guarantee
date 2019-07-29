@@ -80,12 +80,12 @@ steps:
     nugetFeedType: 'external'
     externalEndPoint: 'Nuget.org'
 
-- task: DotNetCoreCLI@2
-  displayName: Push Nuget Package
+
+
+- task: NuGetCommand@2
+  displayName: Publish NuGet Package to nuget.org
   inputs:
-    command: custom
-    custom: nuget
-    arguments: >
-      push $(Build.ArtifactStagingDirectory)/Nuget/*.nupkg
-      -s $(NuGetSourceServerUrl)
-      -k $(NuGetSourceServerApiKey)
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'Nuget.org'

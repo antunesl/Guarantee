@@ -76,5 +76,6 @@ steps:
   displayName: Push to Nuget.org
   inputs:
     command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/Nuget/*.nupkg'
     nugetFeedType: 'external'
     externalEndPoint: 'Nuget.org'

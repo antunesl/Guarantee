@@ -56,11 +56,18 @@ steps:
     reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
 
 
-- task: NuGetCommand@2
+# Pack a NuGet package to a test directory
+- task: DotNetCoreCLI@2
   displayName: Packing Nuget
-  inputs:
-    command: pack
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
+  inputs: 
+    command: 'pack'
+    projects: 'src/Guaranteed/*.csproj'
+    outputDir: '$(Build.ArtifactStagingDirectory)/Nuget'
+
+# Pack a symbol package along with NuGet package
+- task: DotNetCoreCLI@2
+  displayName: Packing Symbol Package
+  inputs: 
+    command: 'pack'
+    projects: 'src/Guaranteed/*.csproj'
+    includesymbols: true

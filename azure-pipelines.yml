@@ -79,3 +79,13 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/Nuget/*.nupkg'
     nugetFeedType: 'external'
     externalEndPoint: 'Nuget.org'
+
+- task: DotNetCoreCLI@2
+  displayName: Push Nuget Package
+  inputs:
+    command: custom
+    custom: nuget
+    arguments: >
+      push $(Build.ArtifactStagingDirectory)/Nuget/*.nupkg
+      -s $(NuGetSourceServerUrl)
+      -k $(NuGetSourceServerApiKey)

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="07/29/2019 16:30:48">
+  <assembly name="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" run-date="2019-07-29" run-time="16:30:48" total="20" passed="20" failed="0" skipped="0" time="0.011" errors="0">
+    <errors />
+    <collection total="20" passed="20" failed="0" skipped="0" name="Test collection for Guaranteed.Tests.UnitTest1" time="0.011">
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;content&quot;, type: typeof(string))" type="Guaranteed.Tests.UnitTest1" method="GuaranteeTypeIfOfType" time="0.0027371" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(int))" type="Guaranteed.Tests.UnitTest1" method="GuaranteeTypeIfOfType" time="0.0000160" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;&quot;, type: typeof(string))" type="Guaranteed.Tests.UnitTest1" method="GuaranteeTypeIfOfType" time="0.0000035" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(float))" type="Guaranteed.Tests.UnitTest1" method="GuaranteeTypeIfOfType" time="0.0000029" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItemsFalse" type="Guaranteed.Tests.UnitTest1" method="GuaranteeEnumerableHasItemsFalse" time="0.0012936" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLte" type="Guaranteed.Tests.UnitTest1" method="GuaranteeEnumerableSizeIsLte" time="0.0005689" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.IsNotNull" type="Guaranteed.Tests.UnitTest1" method="IsNotNull" time="0.0001471" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGeneric" type="Guaranteed.Tests.UnitTest1" method="GuaranteeTypeIfOfTypeGeneric" time="0.0006027" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeThis" type="Guaranteed.Tests.UnitTest1" method="GuaranteeThis" time="0.0006207" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.IsNotNullOrEmpty" type="Guaranteed.Tests.UnitTest1" method="IsNotNullOrEmpty" time="0.0001792" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGte" type="Guaranteed.Tests.UnitTest1" method="GuaranteeEnumerableSizeIsGte" time="0.0007698" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsTrue" type="Guaranteed.Tests.UnitTest1" method="GuaranteeBoolIsTrue" time="0.0002814" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGt" type="Guaranteed.Tests.UnitTest1" method="GuaranteeEnumerableSizeIsGt" time="0.0003822" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItems" type="Guaranteed.Tests.UnitTest1" method="GuaranteeEnumerableHasItems" time="0.0000747" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.ThrowsGivenNullValue" type="Guaranteed.Tests.UnitTest1" method="ThrowsGivenNullValue" time="0.0002592" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeThisGeneric" type="Guaranteed.Tests.UnitTest1" method="GuaranteeThisGeneric" time="0.0006288" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGenericThrows" type="Guaranteed.Tests.UnitTest1" method="GuaranteeTypeIfOfTypeGenericThrows" time="0.0008223" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsFalse" type="Guaranteed.Tests.UnitTest1" method="GuaranteeBoolIsFalse" time="0.0002702" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsEqual" type="Guaranteed.Tests.UnitTest1" method="GuaranteeEnumerableSizeIsEqual" time="0.0005034" result="Pass">
+        <traits />
+      </test>
+      <test name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLt" type="Guaranteed.Tests.UnitTest1" method="GuaranteeEnumerableSizeIsLt" time="0.0005070" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="236cb620-4d1b-4391-aaff-5c0c360f5ab0" name="luis@GANDALF 2019-07-29 16:30:49" runUser="GANDALF\luis" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2019-07-29T16:30:49.5623099+01:00" queuing="2019-07-29T16:30:49.5623112+01:00" start="2019-07-29T16:30:48.6546816+01:00" finish="2019-07-29T16:30:49.6113677+01:00" />
+  <TestSettings name="default" id="b7229471-53db-4a54-a806-0e6fb35a5b9f">
+    <Deployment runDeploymentRoot="luis_GANDALF_2019-07-29_16_30_49" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="8aa77006-d95c-498a-a2cf-40e84c29b023" testId="d5732205-45d0-9ad8-9a99-c0fdf87957d2" testName="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsEqual" computerName="GANDALF" duration="00:00:00.0005034" startTime="2019-07-29T16:30:49.5331181+01:00" endTime="2019-07-29T16:30:49.5331186+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8aa77006-d95c-498a-a2cf-40e84c29b023" />
+    <UnitTestResult executionId="35bcf436-2257-43c3-ab4f-10588a36ecb7" testId="c8d3646c-362b-119f-595d-2482e7c85609" testName="Guaranteed.Tests.UnitTest1.IsNotNullOrEmpty" computerName="GANDALF" duration="00:00:00.0001792" startTime="2019-07-29T16:30:49.5314903+01:00" endTime="2019-07-29T16:30:49.5314907+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35bcf436-2257-43c3-ab4f-10588a36ecb7" />
+    <UnitTestResult executionId="d1ef0455-71ce-49f6-9dc9-da4eafbf53b9" testId="e74ac68a-b1c7-d9d1-c944-580600fa1d93" testName="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsFalse" computerName="GANDALF" duration="00:00:00.0002702" startTime="2019-07-29T16:30:49.5318582+01:00" endTime="2019-07-29T16:30:49.5318583+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1ef0455-71ce-49f6-9dc9-da4eafbf53b9" />
+    <UnitTestResult executionId="f2a02603-ebdc-4a25-bb94-a1cc376dd2c3" testId="c7765abf-4d52-691d-5ac9-bdaa5185f939" testName="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;content&quot;, type: typeof(string))" computerName="GANDALF" duration="00:00:00.0027371" startTime="2019-07-29T16:30:49.5017860+01:00" endTime="2019-07-29T16:30:49.5018598+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2a02603-ebdc-4a25-bb94-a1cc376dd2c3" />
+    <UnitTestResult executionId="b78a2d65-fb37-4f2b-8512-3c44676d4743" testId="19e22559-a63b-39e5-1cd8-b47e60e81558" testName="Guaranteed.Tests.UnitTest1.GuaranteeThis" computerName="GANDALF" duration="00:00:00.0006207" startTime="2019-07-29T16:30:49.5058527+01:00" endTime="2019-07-29T16:30:49.5058528+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b78a2d65-fb37-4f2b-8512-3c44676d4743" />
+    <UnitTestResult executionId="61d5dc2b-301f-4830-ad77-a63878e69c70" testId="d5cb7f8d-8bb8-2b28-361e-a55f70ab9ffe" testName="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLte" computerName="GANDALF" duration="00:00:00.0005689" startTime="2019-07-29T16:30:49.5057473+01:00" endTime="2019-07-29T16:30:49.5057474+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61d5dc2b-301f-4830-ad77-a63878e69c70" />
+    <UnitTestResult executionId="cca90ec8-918f-4366-90f2-35ea466d82f1" testId="38c1f1b7-930d-cc58-5d7f-98e163ad3071" testName="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(float))" computerName="GANDALF" duration="00:00:00.0000029" startTime="2019-07-29T16:30:49.5056579+01:00" endTime="2019-07-29T16:30:49.5056580+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cca90ec8-918f-4366-90f2-35ea466d82f1" />
+    <UnitTestResult executionId="4d64ec14-018a-403f-8ade-9ca52b013da0" testId="69a872a0-332c-90eb-b3a2-ef8babab0c6c" testName="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItemsFalse" computerName="GANDALF" duration="00:00:00.0012936" startTime="2019-07-29T16:30:49.5057034+01:00" endTime="2019-07-29T16:30:49.5057036+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d64ec14-018a-403f-8ade-9ca52b013da0" />
+    <UnitTestResult executionId="b7eb676a-8d9d-4698-b8f2-e6d914cb94ab" testId="a3df207b-3f77-f76f-69b1-408b29ec87fe" testName="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGt" computerName="GANDALF" duration="00:00:00.0003822" startTime="2019-07-29T16:30:49.5316808+01:00" endTime="2019-07-29T16:30:49.5316809+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7eb676a-8d9d-4698-b8f2-e6d914cb94ab" />
+    <UnitTestResult executionId="39a9c279-90ce-44e5-ace3-c40909ad21e2" testId="6ed465e6-c884-cca9-6c7a-259414adebca" testName="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(int))" computerName="GANDALF" duration="00:00:00.0000160" startTime="2019-07-29T16:30:49.5055698+01:00" endTime="2019-07-29T16:30:49.5055703+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39a9c279-90ce-44e5-ace3-c40909ad21e2" />
+    <UnitTestResult executionId="6e9dbc36-d825-42a7-b7dd-1385ba3b9fef" testId="583459b1-1fbb-4ee8-ed94-d274899bb95f" testName="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGeneric" computerName="GANDALF" duration="00:00:00.0006027" startTime="2019-07-29T16:30:49.5058168+01:00" endTime="2019-07-29T16:30:49.5058170+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e9dbc36-d825-42a7-b7dd-1385ba3b9fef" />
+    <UnitTestResult executionId="f9d7be30-58f1-439c-bd94-2cd74e587e66" testId="1a0581e9-940b-c8ba-a903-a78d9bb782df" testName="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGenericThrows" computerName="GANDALF" duration="00:00:00.0008223" startTime="2019-07-29T16:30:49.5318230+01:00" endTime="2019-07-29T16:30:49.5318231+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9d7be30-58f1-439c-bd94-2cd74e587e66" />
+    <UnitTestResult executionId="90caa725-abb0-4333-84dd-8e84f91e083a" testId="fe46f924-9f61-3c52-74cc-a01dda80ca68" testName="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;&quot;, type: typeof(string))" computerName="GANDALF" duration="00:00:00.0000035" startTime="2019-07-29T16:30:49.5056229+01:00" endTime="2019-07-29T16:30:49.5056231+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90caa725-abb0-4333-84dd-8e84f91e083a" />
+    <UnitTestResult executionId="aa0f267c-e980-4cc0-912c-9ac510fa0159" testId="c6594c19-c841-e739-4b71-af4a06f2168a" testName="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItems" computerName="GANDALF" duration="00:00:00.0000747" startTime="2019-07-29T16:30:49.5317156+01:00" endTime="2019-07-29T16:30:49.5317157+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa0f267c-e980-4cc0-912c-9ac510fa0159" />
+    <UnitTestResult executionId="16b98414-49d1-4ba9-af02-a01db7b88c73" testId="78d97292-40ca-f0db-d803-75e3b9b06f82" testName="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsTrue" computerName="GANDALF" duration="00:00:00.0002814" startTime="2019-07-29T16:30:49.5316449+01:00" endTime="2019-07-29T16:30:49.5316451+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16b98414-49d1-4ba9-af02-a01db7b88c73" />
+    <UnitTestResult executionId="9a161bc4-8d8d-4b6c-a760-be3b0d86d353" testId="99a83a91-2653-0d4d-be3f-763e919f3a36" testName="Guaranteed.Tests.UnitTest1.GuaranteeThisGeneric" computerName="GANDALF" duration="00:00:00.0006288" startTime="2019-07-29T16:30:49.5317881+01:00" endTime="2019-07-29T16:30:49.5317882+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a161bc4-8d8d-4b6c-a760-be3b0d86d353" />
+    <UnitTestResult executionId="3ea9ba7f-5893-463b-83cf-915a25d1016e" testId="7f317d2c-73dd-3a23-6a6c-51610de8871b" testName="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLt" computerName="GANDALF" duration="00:00:00.0005070" startTime="2019-07-29T16:30:49.5331632+01:00" endTime="2019-07-29T16:30:49.5331633+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ea9ba7f-5893-463b-83cf-915a25d1016e" />
+    <UnitTestResult executionId="4248c73a-2a14-45b1-b6dd-fae33828ac63" testId="8ff1c5d5-146b-4aec-d6d0-98e14827f9f1" testName="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGte" computerName="GANDALF" duration="00:00:00.0007698" startTime="2019-07-29T16:30:49.5316071+01:00" endTime="2019-07-29T16:30:49.5316074+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4248c73a-2a14-45b1-b6dd-fae33828ac63" />
+    <UnitTestResult executionId="a73d5cd5-49c0-4799-8285-3ec9898503fc" testId="248154f5-c5fe-8563-13ba-6a67b4a37c6f" testName="Guaranteed.Tests.UnitTest1.ThrowsGivenNullValue" computerName="GANDALF" duration="00:00:00.0002592" startTime="2019-07-29T16:30:49.5317533+01:00" endTime="2019-07-29T16:30:49.5317534+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a73d5cd5-49c0-4799-8285-3ec9898503fc" />
+    <UnitTestResult executionId="8ad5c2d8-4ab2-43f6-9508-782dd7ba59a4" testId="ef95b92b-4485-894c-3b81-ad4cf25b8142" testName="Guaranteed.Tests.UnitTest1.IsNotNull" computerName="GANDALF" duration="00:00:00.0001471" startTime="2019-07-29T16:30:49.5057819+01:00" endTime="2019-07-29T16:30:49.5057820+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ad5c2d8-4ab2-43f6-9508-782dd7ba59a4" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.ThrowsGivenNullValue" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="248154f5-c5fe-8563-13ba-6a67b4a37c6f">
+      <Execution id="a73d5cd5-49c0-4799-8285-3ec9898503fc" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.ThrowsGivenNullValue" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsFalse" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="e74ac68a-b1c7-d9d1-c944-580600fa1d93">
+      <Execution id="d1ef0455-71ce-49f6-9dc9-da4eafbf53b9" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsFalse" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGte" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="8ff1c5d5-146b-4aec-d6d0-98e14827f9f1">
+      <Execution id="4248c73a-2a14-45b1-b6dd-fae33828ac63" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGte" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;content&quot;, type: typeof(string))" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="c7765abf-4d52-691d-5ac9-bdaa5185f939">
+      <Execution id="f2a02603-ebdc-4a25-bb94-a1cc376dd2c3" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;content&quot;, type: typeof(string))" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItems" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="c6594c19-c841-e739-4b71-af4a06f2168a">
+      <Execution id="aa0f267c-e980-4cc0-912c-9ac510fa0159" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItems" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGeneric" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="583459b1-1fbb-4ee8-ed94-d274899bb95f">
+      <Execution id="6e9dbc36-d825-42a7-b7dd-1385ba3b9fef" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGeneric" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLte" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="d5cb7f8d-8bb8-2b28-361e-a55f70ab9ffe">
+      <Execution id="61d5dc2b-301f-4830-ad77-a63878e69c70" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLte" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsTrue" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="78d97292-40ca-f0db-d803-75e3b9b06f82">
+      <Execution id="16b98414-49d1-4ba9-af02-a01db7b88c73" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeBoolIsTrue" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGt" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="a3df207b-3f77-f76f-69b1-408b29ec87fe">
+      <Execution id="b7eb676a-8d9d-4698-b8f2-e6d914cb94ab" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsGt" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGenericThrows" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="1a0581e9-940b-c8ba-a903-a78d9bb782df">
+      <Execution id="f9d7be30-58f1-439c-bd94-2cd74e587e66" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfTypeGenericThrows" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.IsNotNullOrEmpty" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="c8d3646c-362b-119f-595d-2482e7c85609">
+      <Execution id="35bcf436-2257-43c3-ab4f-10588a36ecb7" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.IsNotNullOrEmpty" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLt" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="7f317d2c-73dd-3a23-6a6c-51610de8871b">
+      <Execution id="3ea9ba7f-5893-463b-83cf-915a25d1016e" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsLt" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeThisGeneric" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="99a83a91-2653-0d4d-be3f-763e919f3a36">
+      <Execution id="9a161bc4-8d8d-4b6c-a760-be3b0d86d353" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeThisGeneric" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(float))" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="38c1f1b7-930d-cc58-5d7f-98e163ad3071">
+      <Execution id="cca90ec8-918f-4366-90f2-35ea466d82f1" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(float))" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.IsNotNull" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="ef95b92b-4485-894c-3b81-ad4cf25b8142">
+      <Execution id="8ad5c2d8-4ab2-43f6-9508-782dd7ba59a4" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.IsNotNull" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsEqual" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="d5732205-45d0-9ad8-9a99-c0fdf87957d2">
+      <Execution id="8aa77006-d95c-498a-a2cf-40e84c29b023" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableSizeIsEqual" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeThis" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="19e22559-a63b-39e5-1cd8-b47e60e81558">
+      <Execution id="b78a2d65-fb37-4f2b-8512-3c44676d4743" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeThis" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;&quot;, type: typeof(string))" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="fe46f924-9f61-3c52-74cc-a01dda80ca68">
+      <Execution id="90caa725-abb0-4333-84dd-8e84f91e083a" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: &quot;&quot;, type: typeof(string))" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(int))" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="6ed465e6-c884-cca9-6c7a-259414adebca">
+      <Execution id="39a9c279-90ce-44e5-ace3-c40909ad21e2" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeTypeIfOfType(value: 1, type: typeof(int))" />
+    </UnitTest>
+    <UnitTest name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItemsFalse" storage="c:\users\luis\source\repos\guaranteed\guaranteed.tests\bin\debug\netcoreapp3.0\guaranteed.tests.dll" id="69a872a0-332c-90eb-b3a2-ef8babab0c6c">
+      <Execution id="4d64ec14-018a-403f-8ade-9ca52b013da0" />
+      <TestMethod codeBase="C:\Users\luis\source\repos\Guaranteed\Guaranteed.Tests\bin\Debug\netcoreapp3.0\Guaranteed.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Guaranteed.Tests.UnitTest1" name="Guaranteed.Tests.UnitTest1.GuaranteeEnumerableHasItemsFalse" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d5732205-45d0-9ad8-9a99-c0fdf87957d2" executionId="8aa77006-d95c-498a-a2cf-40e84c29b023" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8d3646c-362b-119f-595d-2482e7c85609" executionId="35bcf436-2257-43c3-ab4f-10588a36ecb7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e74ac68a-b1c7-d9d1-c944-580600fa1d93" executionId="d1ef0455-71ce-49f6-9dc9-da4eafbf53b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c7765abf-4d52-691d-5ac9-bdaa5185f939" executionId="f2a02603-ebdc-4a25-bb94-a1cc376dd2c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19e22559-a63b-39e5-1cd8-b47e60e81558" executionId="b78a2d65-fb37-4f2b-8512-3c44676d4743" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5cb7f8d-8bb8-2b28-361e-a55f70ab9ffe" executionId="61d5dc2b-301f-4830-ad77-a63878e69c70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38c1f1b7-930d-cc58-5d7f-98e163ad3071" executionId="cca90ec8-918f-4366-90f2-35ea466d82f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69a872a0-332c-90eb-b3a2-ef8babab0c6c" executionId="4d64ec14-018a-403f-8ade-9ca52b013da0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3df207b-3f77-f76f-69b1-408b29ec87fe" executionId="b7eb676a-8d9d-4698-b8f2-e6d914cb94ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ed465e6-c884-cca9-6c7a-259414adebca" executionId="39a9c279-90ce-44e5-ace3-c40909ad21e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="583459b1-1fbb-4ee8-ed94-d274899bb95f" executionId="6e9dbc36-d825-42a7-b7dd-1385ba3b9fef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a0581e9-940b-c8ba-a903-a78d9bb782df" executionId="f9d7be30-58f1-439c-bd94-2cd74e587e66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe46f924-9f61-3c52-74cc-a01dda80ca68" executionId="90caa725-abb0-4333-84dd-8e84f91e083a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c6594c19-c841-e739-4b71-af4a06f2168a" executionId="aa0f267c-e980-4cc0-912c-9ac510fa0159" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78d97292-40ca-f0db-d803-75e3b9b06f82" executionId="16b98414-49d1-4ba9-af02-a01db7b88c73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="99a83a91-2653-0d4d-be3f-763e919f3a36" executionId="9a161bc4-8d8d-4b6c-a760-be3b0d86d353" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f317d2c-73dd-3a23-6a6c-51610de8871b" executionId="3ea9ba7f-5893-463b-83cf-915a25d1016e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ff1c5d5-146b-4aec-d6d0-98e14827f9f1" executionId="4248c73a-2a14-45b1-b6dd-fae33828ac63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="248154f5-c5fe-8563-13ba-6a67b4a37c6f" executionId="a73d5cd5-49c0-4799-8285-3ec9898503fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef95b92b-4485-894c-3b81-ad4cf25b8142" executionId="8ad5c2d8-4ab2-43f6-9508-782dd7ba59a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="20" executed="20" passed="20" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 3.0.0-preview7-27912-14)&#xD;
+[xUnit.net 00:00:00.33]   Discovering: Guaranteed.Tests&#xD;
+[xUnit.net 00:00:00.37]   Discovered:  Guaranteed.Tests&#xD;
+[xUnit.net 00:00:00.37]   Starting:    Guaranteed.Tests&#xD;
+[xUnit.net 00:00:00.46]   Finished:    Guaranteed.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

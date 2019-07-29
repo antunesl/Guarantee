@@ -13,7 +13,6 @@ variables:
   buildConfiguration: 'Release'
   Major: '0'
   Minor: '1'
-  Patch: '$(Rev:r)'
 
 steps:
 - task: DotNetCoreInstaller@0
@@ -67,7 +66,7 @@ steps:
     versionEnvVar: 'nupkgVersion'
     majorVersion: '$(Major)'
     minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
+    patchVersion: '$(Rev:r)'
     packTimezone: 'utc'
 
 # Pack a symbol package along with NuGet package

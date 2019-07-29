@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guaranteed", "Guaranteed\Guaranteed.csproj", "{9B9E913B-8E48-4339-A67B-CC23B0507A64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guaranteed", "src\Guaranteed\Guaranteed.csproj", "{9B9E913B-8E48-4339-A67B-CC23B0507A64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guaranteed.Tests", "Guaranteed.Tests\Guaranteed.Tests.csproj", "{9A51A2D8-C7B5-4821-8D23-4F124AEAA11F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guaranteed.Tests", "tests\Guaranteed.Tests\Guaranteed.Tests.csproj", "{9A51A2D8-C7B5-4821-8D23-4F124AEAA11F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guaranteed.Benchmarks", "Guaranteed.Benchmarks\Guaranteed.Benchmarks.csproj", "{BD2F21DC-E665-4E51-814D-3B75E354F342}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guaranteed.Benchmarks", "tests\Guaranteed.Benchmarks\Guaranteed.Benchmarks.csproj", "{BD2F21DC-E665-4E51-814D-3B75E354F342}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

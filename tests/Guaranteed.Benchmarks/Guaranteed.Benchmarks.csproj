@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Guaranteed\Guaranteed.csproj" />
+    <ProjectReference Include="..\..\src\Guaranteed\Guaranteed.csproj" />
   </ItemGroup>
 
 </Project>

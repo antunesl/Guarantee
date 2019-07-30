@@ -3,8 +3,8 @@
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-trigger:
-- master
+# trigger:
+# - master
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -113,7 +113,7 @@ steps:
 # Create, edit, or delete a GitHub release
 - task: GitHubRelease@0
   inputs:
-    gitHubConnection: 'GitHub-PAT'
+    gitHubConnection: 'GitHubPAT'
     repositoryName: '$(Build.Repository.Name)' 
     target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
     tagSource: manual

@@ -92,14 +92,14 @@ steps:
 #     includesymbols: true
 
 
-- task: NuGetCommand@2
-  displayName: Publish NuGet Package to nuget.org
-  inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/Nuget/*.nupkg;'
-    nuGetFeedType: 'external'
-    publishFeedCredentials: 'Nuget.org'
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
+# - task: NuGetCommand@2
+#   displayName: Publish NuGet Package to nuget.org
+#   inputs:
+#     command: 'push'
+#     packagesToPush: '$(Build.ArtifactStagingDirectory)/Nuget/*.nupkg;'
+#     nuGetFeedType: 'external'
+#     publishFeedCredentials: 'Nuget.org'
+#   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
 
 # # azure-pipelines.yml, continued one more time
 # - task: KriefMikael.githubtools.GitHubTag.GitHubTag@1

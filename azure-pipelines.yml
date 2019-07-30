@@ -11,17 +11,17 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  Major: '0'
-  Minor: '1'
 
 steps:
 # Instal DotNetCore SDK
 - task: DotNetCoreInstaller@0
+  displayName: Installing DotNetCore SDK
   inputs:
     version: '3.0.100-preview6-012264' 
 
 # Install GitVersion
 - task: NuGetCommand@2
+  displayName: Installing GitVersion
   inputs:
     command: custom
     arguments: install GitVersion.CommandLine -Version 4.0.0 -OutputDirectory $(Build.BinariesDirectory)/tools -ExcludeVersion
@@ -33,7 +33,7 @@ steps:
 ## Build
 ##
 - task: DotNetCoreCLI@2
-  displayName: Build Guaranteed
+  displayName: Building
   inputs:
     command: build
     projects: 'src/Guaranteed/*.csproj'
@@ -76,7 +76,7 @@ steps:
     arguments: '--no-build'
     projects: 'src/Guaranteed/Guaranteed.csproj'
     outputDir: '$(Build.ArtifactStagingDirectory)/Nuget'
-    # versioningScheme: 'byPrereleaseNumber'
+    versioningScheme: 'byBuildNumber'
     # versionEnvVar: 'nupkgVersion'
     # majorVersion: '$(Major)'
     # minorVersion: '$(Minor)'

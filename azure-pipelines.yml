@@ -109,6 +109,7 @@ steps:
 #   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
 
 - task: GitHubTag@1
+  displayName: Create Git Tag
   inputs:
     githubEndpoint: 'antunesl'
     repositoryName: '$(Build.Repository.Name)'

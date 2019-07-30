@@ -15,19 +15,32 @@ variables:
   Minor: '1'
 
 steps:
+# Instal DotNetCore SDK
 - task: DotNetCoreInstaller@0
   inputs:
     version: '3.0.100-preview6-012264' 
 
+# Install GitVersion
+- task: NuGetCommand@2
+  inputs:
+    command: custom
+    arguments: install GitVersion.CommandLine -Version 4.0.0 -OutputDirectory $(Build.BinariesDirectory)/tools -ExcludeVersion
+- script: mono $(Build.BinariesDirectory)/tools/GitVersion.CommandLine/tools/GitVersion.exe /output buildserver /nofetch
+
+
+
+##
+## Build
+##
 - task: DotNetCoreCLI@2
   displayName: Build Guaranteed
   inputs:
     command: build
     projects: 'src/Guaranteed/*.csproj'
-    arguments: '--configuration $(buildConfiguration)'
+    arguments: '--configuration $(buildConfiguration) /p:Version=$(GitVersion.NuGetVersion)'
 
 ##
-## Tests
+## Run Tests
 ##
 - task: DotNetCoreCLI@2
   displayName: Running Tests
@@ -62,12 +75,12 @@ steps:
     command: 'pack'
     projects: 'src/Guaranteed/Guaranteed.csproj'
     outputDir: '$(Build.ArtifactStagingDirectory)/Nuget'
-    versioningScheme: 'byPrereleaseNumber'
-    versionEnvVar: 'nupkgVersion'
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Rev:r)'
-    packTimezone: 'utc'
+    # versioningScheme: 'byPrereleaseNumber'
+    # versionEnvVar: 'nupkgVersion'
+    # majorVersion: '$(Major)'
+    # minorVersion: '$(Minor)'
+    # patchVersion: '$(Rev:r)'
+    # packTimezone: 'utc'
 
 # Pack a symbol package along with NuGet package
 - task: DotNetCoreCLI@2
@@ -78,10 +91,10 @@ steps:
     includesymbols: true
 
 
-- task: NuGetCommand@2
-  displayName: Publish NuGet Package to nuget.org
-  inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;'
-    nuGetFeedType: 'external'
-    publishFeedCredentials: 'Nuget.org'
+# - task: NuGetCommand@2
+#   displayName: Publish NuGet Package to nuget.org
+#   inputs:
+#     command: 'push'
+#     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;'
+#     nuGetFeedType: 'external'
+#     publishFeedCredentials: 'Nuget.org'

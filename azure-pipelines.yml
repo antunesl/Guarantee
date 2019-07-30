@@ -39,33 +39,33 @@ steps:
     projects: 'src/Guaranteed/*.csproj'
     arguments: '--configuration $(buildConfiguration) /p:Version=$(GitVersion.NuGetVersion)'
 
-##
-## Run Tests
-##
-# - task: DotNetCoreCLI@2
-#   displayName: Running Tests
-#   inputs:
-#     command: test
-#     projects: 'tests/*.Tests/*.csproj'
-#     arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+#
+# Run Tests
+#
+- task: DotNetCoreCLI@2
+  displayName: Running Tests
+  inputs:
+    command: test
+    projects: 'tests/*.Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
 
-# - task: Palmmedia.reportgenerator.reportgenerator-build-release-task.reportgenerator@4
-#   displayName: Code Coverage ReportGenerator
-#   inputs:
-#     reports: '$(Build.SourcesDirectory)/tests/*.Tests/**/coverage.cobertura.xml'
-#     targetdir: '$(Build.SourcesDirectory)/CodeCoverage'
-#     reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
-#     assemblyfilters: '-xunit*'
+- task: Palmmedia.reportgenerator.reportgenerator-build-release-task.reportgenerator@4
+  displayName: Code Coverage ReportGenerator
+  inputs:
+    reports: '$(Build.SourcesDirectory)/tests/*.Tests/**/coverage.cobertura.xml'
+    targetdir: '$(Build.SourcesDirectory)/CodeCoverage'
+    reporttypes: 'HtmlInline_AzurePipelines;Cobertura;Badges'
+    assemblyfilters: '-xunit*'
 
 # Publish the code coverage result (summary and web site)
 # The summary allows to view the coverage percentage in the summary tab
 # The web site allows to view which lines are covered directly in Azure Pipeline
-# - task: PublishCodeCoverageResults@1
-#   displayName: 'Publish Code Coverage Report'
-#   inputs:
-#     codeCoverageTool: Cobertura
-#     summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
-#     reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish Code Coverage Report'
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
+    reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
 
 
 # Pack a NuGet package to a test directory
@@ -77,19 +77,14 @@ steps:
     projects: 'src/Guaranteed/Guaranteed.csproj'
     outputDir: '$(Build.ArtifactStagingDirectory)/Nuget'
     versioningScheme: 'byBuildNumber'
-    # versionEnvVar: 'nupkgVersion'
-    # majorVersion: '$(Major)'
-    # minorVersion: '$(Minor)'
-    # patchVersion: '$(Rev:r)'
-    # packTimezone: 'utc'
 
 # Pack a symbol package along with NuGet package
-# - task: DotNetCoreCLI@2
-#   displayName: Packing Symbol Package
-#   inputs: 
-#     command: 'pack'
-#     projects: 'src/Guaranteed/Guaranteed.csproj'
-#     includesymbols: true
+- task: DotNetCoreCLI@2
+  displayName: Packing Symbol Package
+  inputs: 
+    command: 'pack'
+    projects: 'src/Guaranteed/Guaranteed.csproj'
+    includesymbols: true
 
 
 # - task: NuGetCommand@2
@@ -101,37 +96,16 @@ steps:
 #     publishFeedCredentials: 'Nuget.org'
 #   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
 
-# # azure-pipelines.yml, continued one more time
-# - task: KriefMikael.githubtools.GitHubTag.GitHubTag@1
-#   inputs:
-#     githubEndpoint: antunesl
-#     tag: 'v$(GitVersion.NuGetVersion)'
-#   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
+
+# azure-pipelines.yml, continued one more time
+- task: KriefMikael.githubtools.GitHubTag.GitHubTag@1
+  inputs:
+    githubEndpoint: antunesl
+    tag: 'v$(GitVersion.NuGetVersion)'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
 
 
-# # GitHub Release
-# # Create, edit, or delete a GitHub release
-# - task: GitHubRelease@0
-#   inputs:
-#     gitHubConnection: 'GitHubPAT'
-#     repositoryName: '$(Build.Repository.Name)' 
-#     target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
-#     tagSource: manual
-#     tag: 'v$(GitVersion.NuGetVersion)' # Required when action == Edit || Action == Delete || TagSource == Manual
-#     #title: # Optional
-#     #releaseNotesSource: 'file' # Optional. Options: file, input
-#     #releaseNotesFile: # Optional
-#     #releaseNotes: # Optional
-#     #assets: '$(Build.ArtifactStagingDirectory)/*' # Optional
-#     #assetUploadMode: 'delete' # Optional. Options: delete, replace
-#     #isDraft: false # Optional
-#     isPreRelease: true
-#     #addChangeLog: true # Optional
-#     #compareWith: 'lastFullRelease' # Required when addChangeLog == True. Options: lastFullRelease, lastRelease, lastReleaseByTag
-#     #releaseTag: # Required when compareWith == LastReleaseByTag
-  
-
-
+# GitHub Release
 - task: GitHubRelease@0
   displayName: 'Create GitHub Tag'
   inputs:

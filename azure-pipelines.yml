@@ -135,7 +135,7 @@ steps:
 - task: GitHubRelease@0
   displayName: 'Create GitHub Tag'
   inputs:
-    gitHubConnection: 'antunesl'
+    gitHubConnection: '$(GitHubConnection)'
     repositoryName: 'antunesl/Guaranteed'
     action: 'create'
     target: '$(Build.SourceVersion)'

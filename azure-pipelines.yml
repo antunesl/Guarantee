@@ -101,9 +101,16 @@ steps:
     publishFeedCredentials: 'Nuget.org'
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
 
-# azure-pipelines.yml, continued one more time
-- task: KriefMikael.githubtools.GitHubTag.GitHubTag@1
+# # azure-pipelines.yml, continued one more time
+# - task: KriefMikael.githubtools.GitHubTag.GitHubTag@1
+#   inputs:
+#     githubEndpoint: antunesl
+#     tag: 'v$(GitVersion.NuGetVersion)'
+#   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
+
+- task: GitHubTag@1
   inputs:
-    githubEndpoint: antunesl
+    githubEndpoint: 'antunesl'
+    repositoryName: '$(Build.Repository.Name)'
     tag: 'v$(GitVersion.NuGetVersion)'
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))

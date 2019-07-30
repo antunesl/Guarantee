@@ -139,6 +139,7 @@ steps:
     repositoryName: 'antunesl/Guaranteed'
     action: 'create'
     target: '$(Build.SourceVersion)'
-    tagSource: 'auto'
+    tagSource: 'manual'
+    tag: 'v$(GitVersion.NuGetVersion)'
     isPreRelease: true
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))

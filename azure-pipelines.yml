@@ -109,24 +109,36 @@ steps:
 #   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
 
 
-# GitHub Release
-# Create, edit, or delete a GitHub release
+# # GitHub Release
+# # Create, edit, or delete a GitHub release
+# - task: GitHubRelease@0
+#   inputs:
+#     gitHubConnection: 'GitHubPAT'
+#     repositoryName: '$(Build.Repository.Name)' 
+#     target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
+#     tagSource: manual
+#     tag: 'v$(GitVersion.NuGetVersion)' # Required when action == Edit || Action == Delete || TagSource == Manual
+#     #title: # Optional
+#     #releaseNotesSource: 'file' # Optional. Options: file, input
+#     #releaseNotesFile: # Optional
+#     #releaseNotes: # Optional
+#     #assets: '$(Build.ArtifactStagingDirectory)/*' # Optional
+#     #assetUploadMode: 'delete' # Optional. Options: delete, replace
+#     #isDraft: false # Optional
+#     isPreRelease: true
+#     #addChangeLog: true # Optional
+#     #compareWith: 'lastFullRelease' # Required when addChangeLog == True. Options: lastFullRelease, lastRelease, lastReleaseByTag
+#     #releaseTag: # Required when compareWith == LastReleaseByTag
+  
+
+
 - task: GitHubRelease@0
+  displayName: 'Create GitHub Tag'
   inputs:
     gitHubConnection: 'GitHubPAT'
-    repositoryName: '$(Build.Repository.Name)' 
-    target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
-    tagSource: manual
-    tag: 'v$(GitVersion.NuGetVersion)' # Required when action == Edit || Action == Delete || TagSource == Manual
-    #title: # Optional
-    #releaseNotesSource: 'file' # Optional. Options: file, input
-    #releaseNotesFile: # Optional
-    #releaseNotes: # Optional
-    #assets: '$(Build.ArtifactStagingDirectory)/*' # Optional
-    #assetUploadMode: 'delete' # Optional. Options: delete, replace
-    #isDraft: false # Optional
+    repositoryName: 'antunesl/Guaranteed'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'auto'
     isPreRelease: true
-    #addChangeLog: true # Optional
-    #compareWith: 'lastFullRelease' # Required when addChangeLog == True. Options: lastFullRelease, lastRelease, lastReleaseByTag
-    #releaseTag: # Required when compareWith == LastReleaseByTag
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'), eq('true', variables['FORCE_PUSH_NUGET']))
